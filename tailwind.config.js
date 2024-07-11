@@ -8,7 +8,8 @@ export default {
     extend: {
       fontFamily: {
         jost: ["Jost", "sans-serif"],
-        playFair: ["Playfair Display", "san-serif"]
+        playFair: ["Playfair Display", "san-serif"],
+        satisfy: ["Satisfy", "cursive"]
       },
       screens: {
         'tablet': '640px',

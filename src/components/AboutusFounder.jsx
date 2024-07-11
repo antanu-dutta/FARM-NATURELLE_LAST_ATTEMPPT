@@ -10,7 +10,7 @@ const AboutusFounder = () => {
     <div className="founder">
       <div className="container">
         <div className="flex items-center justify-center">
-          <div className="rounded-lg bg-[#fefefe] shadow-lg p-7 w-[45%] translate-x-10">
+          <div className="rounded-lg bg-[#fefefe] shadow-lg p-7 w-[45%] translate-x-10 z-[10]">
             <Title>OUR FOUNDER</Title>
             <Heading className={"mb-4"}>
               Meet Our Visionary Founder <br />

@@ -23,9 +23,7 @@ const Instagram = () => {
             />
             <div className="absolute top-0 left-0 w-full h-full flex  opacity-0 justify-between group-hover:opacity-100 transition-all flex-col p-4">
               <p className="text-[12px] text-white">{curData.text}</p>
-              <date className="text-white font-bold text-sm">
-                {curData.date}
-              </date>
+              <p className="text-white font-bold text-sm">{curData.date}</p>
             </div>
           </div>
         ))}

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -37,6 +38,47 @@
   background-repeat: no-repeat;
   padding: 49px 0;
 }
+.aboutus-soil {
+  background-image: url("https://farmnaturelle.com/cdn/shop/files/Section.png?v=1697626031");
+  padding: 140px 0 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.playbutton {
+  position: relative;
+}
+.wave {
+  position: absolute;
+  top: -11px;
+  left: -16px;
+  background: linear-gradient(#f26101, #08aeea), rgba(0, 0, 0, 0.2);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  animation: wave 2s infinite linear;
+}
+.bookingFarm {
+  background-image: url("https://farmnaturelle.com/cdn/shop/files/Frame_14857361.png?v=1697731826");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
 @layer base {
   body {
     @apply font-jost;

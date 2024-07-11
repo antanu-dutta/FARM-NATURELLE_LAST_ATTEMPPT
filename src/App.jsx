@@ -16,12 +16,14 @@ import RefundPolicy from "./pages/RefundPolicy";
 import ProductDetails from "./pages/ProductDetails";
 import Collection from "./pages/Collection";
 import Products from "./pages/Products";
+import ScrollToTop from "./helper/ScrollToTop";
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
         <Nav />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />

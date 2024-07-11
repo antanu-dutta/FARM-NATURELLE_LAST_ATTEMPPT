@@ -10,7 +10,11 @@ const AboutusComp = ({ data }) => {
   return (
     <div>
       <div className="container">
-        <div className="py-[110px] flex justify-around ">
+        <div
+          className={`py-[110px] flex justify-around ${
+            title.includes("MISSION") ? "flex-row-reverse" : "flex-row"
+          }`}
+        >
           <img src={image} alt="" className="w-[45%]" />
           <div className="w-[43%]">
             <Title>{title}</Title>

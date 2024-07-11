@@ -22,7 +22,7 @@ const Nav = () => {
   }, []);
   return (
     <header
-      className={`fixed w-full z-[10] transition-all ${
+      className={`fixed w-full z-[100000] transition-all ${
         scrolled ? "shadow-lg" : ""
       }`}
     >
