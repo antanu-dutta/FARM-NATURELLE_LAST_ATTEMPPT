@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fixed-element {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background: rgb(0 0 0 / 69%);
+}
+.footer-image {
+  background-image: url("https://farmnaturelle.com/cdn/shop/files/Group_14856848.png?v=1696491609");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 30px 0 0;
+}
+.amazon_review {
+  background-image: url("https://farmnaturelle.com/cdn/shop/files/amazon_1.jpg?v=1696486290");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 118px 0;
+  background-position: center;
+}
+.bullet-points {
+  list-style-image: url("https://farmnaturelle.com/cdn/shop/files/Symbol.svg?v=1697454096");
+  list-style-position: inside;
+}
+.founder {
+  background-image: url("https://farmnaturelle.com/cdn/shop/files/farm_try_2_1.png?v=1697615538");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 49px 0;
+}
+@layer base {
+  body {
+    @apply font-jost;
+  }
+}
