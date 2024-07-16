@@ -18,7 +18,7 @@ export const footerLinks = [
   { name: "Blogs", path: "/blogs" },
   { name: "Privacy Policy", path: "/privacy-policy" },
   { name: "Terms and Condition", path: "/terms-and-condition" },
-  { name: "Shipping Policy", path: "/shipping-policy" },
+  { name: "Shipping Policy", path: "#" },
   { name: "Refund Policy", path: "/refund-policy" }
 ]
 

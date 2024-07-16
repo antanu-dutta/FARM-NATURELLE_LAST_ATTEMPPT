@@ -1,4 +1,3 @@
-import React from "react";
 import BulkPurchaseHeader from "../components/BulkPurchaseHeader";
 import BulkPurchaseContent from "../components/BulkPurchaseContent";
 import BulkPurchaseForm from "../components/BulkPurchaseForm";

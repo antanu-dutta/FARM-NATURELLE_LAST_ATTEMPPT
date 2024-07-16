@@ -1,4 +1,3 @@
-import React from "react";
 import Heading from "../reusable components/Heading";
 import PersonalForm from "./PersonalForm";
 import CompanyForm from "./CompanyForm";

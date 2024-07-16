@@ -6,6 +6,18 @@ const ProductReducer = (state, action) => {
         shopByConcernProducts: action.payload
       }
     }
+    case "GET_ALL_PRODUCTS": {
+      return {
+        ...state,
+        TotalProducts: action.payload
+      }
+    }
+    case "GET_HONEY_PRODUCT": {
+      return {
+        ...state,
+        honey: action.payload
+      }
+    }
   }
   return state
 }

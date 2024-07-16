@@ -34,19 +34,23 @@ const Home = () => {
           <FilteredProduct
             heading="Pure Honey"
             title="Bee-produced, unprocessed honey from a farm, pure and natural."
+            category="Honey"
           />
           <FilteredProduct
             heading="Cold Pressed Cooking Oils"
             title="Cold-pressed, natural cooking oils sourced from farm ingredients for healthier cuisine."
+            category="Cooking Oil"
           />
           <FilteredProduct
             heading="Bilona A2 Ghee"
             title="Pure, farm-sourced, made through traditional method."
+            category="Ghee"
           />
           <WhyFarm />
           <FilteredProduct
             heading="Herbal Juices"
             title="Pure, Organic herbal juices sourced from farm ingredients has no added sugar."
+            category="Herbal Juice"
           />
           <Gift />
           <CustomerLove />
@@ -55,7 +59,7 @@ const Home = () => {
         <AmazonReview />
         <div className="bg-[#f6f5f0]">
           <HappyCustomer />
-          <Instagram />
+          {/* <Instagram /> */}
         </div>
       </div>
     </div>

@@ -1,20 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Heading from "../reusable components/Heading";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 import NavigationButton from "../reusable components/NavigationButton";
 import SecondaryButton from "../reusable components/SecondaryButton";
 import SwiperComp from "../reusable components/SwiperComp";
 import ProductCard from "./ProductCard";
+import { useProductContext } from "../context/ProductContext";
 
-const FilteredProduct = ({ heading, title }) => {
+const FilteredProduct = ({ heading, title, category }) => {
+  const { products } = useProductContext();
   const icons = [<FaArrowLeft />, <FaArrowRight />];
-  const product = [
-    <ProductCard />,
-    <ProductCard />,
-    <ProductCard />,
-    <ProductCard />,
-    <ProductCard />,
-  ];
+  const filteredProduct = products.filter(
+    (curProduct) => curProduct.category === category
+  );
+  const productList = filteredProduct.map((curProduct, index) => (
+    <ProductCard
+      key={index}
+      image={curProduct.image}
+      hoverImage={curProduct.hoverImage}
+      name={curProduct.name.slice(0, 30) + "..."}
+      discountedPrice={curProduct.variety[0].discountedPrice}
+      originalPrice={curProduct.variety[0].originalPrice}
+      discount={curProduct.variety[0].discount}
+    />
+  ));
+
   return (
     <div className="py-16">
       <div className="flex items-center ">
@@ -31,7 +41,7 @@ const FilteredProduct = ({ heading, title }) => {
           </SecondaryButton>
         </div>
         <div className="w-[65%]">
-          <SwiperComp sliderElements={product} view={3} />
+          <SwiperComp sliderElements={productList} view={3} />
         </div>
       </div>
     </div>

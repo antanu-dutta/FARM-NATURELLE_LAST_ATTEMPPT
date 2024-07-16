@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Nav from "./components/Nav";
@@ -17,6 +16,7 @@ import ProductDetails from "./pages/ProductDetails";
 import Collection from "./pages/Collection";
 import Products from "./pages/Products";
 import ScrollToTop from "./helper/ScrollToTop";
+import SinglePage from "./pages/SinglePage";
 
 const App = () => {
   return (
@@ -32,6 +32,7 @@ const App = () => {
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/bulk-purchase" element={<BulkPurchase />} />
           <Route path="/blogs" element={<Blogs />} />
+          {/*// ! {Articles goes here } */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-and-condition" element={<TermsAndCondition />} />
           <Route path="/shipping-policy" element={<ShippingPolicy />} />
@@ -39,6 +40,7 @@ const App = () => {
           <Route path="/productDetails" element={<ProductDetails />} />
           <Route path="/collection" element={<Collection />} />
           <Route path="/collection/:id" element={<Products />} />
+          <Route path="/product/:id" element={<SinglePage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

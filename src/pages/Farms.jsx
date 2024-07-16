@@ -1,4 +1,3 @@
-import React from "react";
 import FarmHeader from "../components/FarmHeader";
 import AboutFarm from "../components/AboutFarm";
 import FarmNatureGoodNess from "../components/FarmNaturelleGoodNess";
